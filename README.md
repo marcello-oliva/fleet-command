@@ -1,55 +1,98 @@
 <h1 align="center">
-  Fleet Command
+  <br>
+    <a href="https://github.com/marcello-oliva/fleet-command">
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogodix.com%2Flogo%2F1784749.png&f=1&nofb=1&ipt=49b4ad1423dddee550c5ff27a22eb2255d1a3377d8aaed36e5cce4a37d4538af" alt="Fleet Command" width="150">
+    </a>
+  <br>
+    Fleet Command
+  <br>
 </h1>
+
+<h4 align="center">
+  A modern C++ implementation of the classic Battleship game
+</h4>
+
+<p align="center">
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue?style=flat" alt="License">
+  </a>
+  <a href="https://github.com/marcello-oliva/fleet-command/actions/workflows/ci.yml">
+    <img src="https://github.com/marcello-oliva/fleet-command/actions/workflows/ci.yml/badge.svg" alt="CI Status">
+  </a>
+
+  <a href="https://github.com/marcello-oliva/fleet-command/issues">
+    <img src="https://img.shields.io/github/issues/marcello-oliva/fleet-command?style=flat" alt="Issues">
+  </a>
+</p>
+
+<p align="center">
+  <a href="#overview">Overview</a> ・
+  <a href="#features">Features</a> ・
+  <a href="#prerequisites">Prerequisites</a> ・
+  <a href="#installation">Installation</a> ・
+  <a href="#license">License</a>
+</p>
+
+---
 
 ## Overview
 
-Fleet Command is a **C++ implementation** of the classic Battleship game, designed with a focus on modular architecture, clarity, and extensibility.
-It simulates a naval battle between two opposing fleets on a 2D grid. Players strategically deploy their ships and attempt to locate and destroy the enemy fleet.
+**Fleet Command** is a modern C++ implementation of the classic strategy game.
+It features:
 
-The objective is simple: **sink all enemy ships before yours are destroyed.**
+- Advanced AI with customizable difficulty levels
+- Flexible board configuration and game modes
+- Single-player and multiplayer options
 
----
+This project combines **classic gameplay** with **modern software design practices**, emphasizing modularity, maintainability, and scalability.
 
-## Design Goals
+> [!NOTE]
+> For technical details, please refer to the [`ARCHITECTURE`](docs/ARCHITECTURE.md) documentation.
 
-- Clean modular C++ architecture
-- Separation of game logic and presentation layer
-- Extensibility for AI, networking, and GUI
-- Application of modern C++ best practices
-
----
-
-## Requirements
-
-- C++17 or higher
-- Compatible compiler (GCC, Clang, or MSVC)
+> [!IMPORTANT]
+> This project originated as a **university assignment**. See [`HISTORY`](docs/HISTORY.md) for a detailed evolution of the project.
 
 ---
 
-## Build & Run
+## Features
 
-To build and run Fleet Command, follow these steps:
+- **Classic Battleship Rules**: Play solo following traditional rules.
+- **AI Opponent**: Compete against an intelligent AI with multiple difficulty levels.
+- **Game Customization**: Adjust board size, ship types, and game modes.
+- **Multiplayer**: Local or network-based multiplayer support.
 
-1. Clone the repository:
+A comprehensive list of **implemented and planned features** is available in [`IMPLEMENTATIONS`](docs/IMPLEMENTATIONS.md), along with the **project roadmap**.
 
-   ```bash
-   git clone https://github.com/marcello-oliva/fleet-command.git
-   ```
+> [!CAUTION]
+> This project is intended for **educational and experimental purposes**.
 
-2. Navigate to the project directory:
+---
 
-   ```bash
-   cd fleet-command
-   ```
+## Prerequisites
 
-3. Build the project:
+This project uses CMake with CMake Presets to ensure a clean, reproducible, and platform-independent build process. Ensure the following software is installed:
 
-   ```bash
-   g++ -o main src/*.cpp
-   ```
+- [Git](https://git-scm.com/)
+- [G++](https://gcc.gnu.org/)
+- [CMake](https://cmake.org/) (optional, recommended for advanced builds)
 
-4. Run the executable:
-   ```bash
-   ./main
-   ```
+---
+
+## Installation
+
+See the detailed [Installation & Build Guide](docs/INSTALLATION.md) for instructions on:
+
+- Installing prerequisites
+- Cloning the repository
+- Building the project (development or release presets)
+- Running tests
+- Installing the game system-wide
+
+> [!WARNING]
+> Manual compilation of each source file is possible but not recommended, see [`INSTALLATION`](docs/INSTALLATION.md).
+
+---
+
+## License
+
+This project is licensed under the MIT License. For full details, see the [LICENSE](LICENSE) file.
